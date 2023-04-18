@@ -1,0 +1,100 @@
+C:\Users\Iwand\Desktop\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.csproj.AssemblyReference.cache
+C:\Users\Iwand\Desktop\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.Form1.resources
+C:\Users\Iwand\Desktop\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.csproj.GenerateResource.cache
+C:\Users\Iwand\Desktop\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Iwand\Desktop\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.AssemblyInfoInputs.cache
+C:\Users\Iwand\Desktop\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.AssemblyInfo.cs
+C:\Users\Iwand\Desktop\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.csproj.CoreCompileInputs.cache
+C:\Users\Iwand\Desktop\DiscordCounter\bin\Debug\net6.0-windows\selenium-manager\linux\selenium-manager
+C:\Users\Iwand\Desktop\DiscordCounter\bin\Debug\net6.0-windows\selenium-manager\macos\selenium-manager
+C:\Users\Iwand\Desktop\DiscordCounter\bin\Debug\net6.0-windows\selenium-manager\windows\selenium-manager.exe
+C:\Users\Iwand\Desktop\DiscordCounter\bin\Debug\net6.0-windows\DiscordCounter.exe
+C:\Users\Iwand\Desktop\DiscordCounter\bin\Debug\net6.0-windows\DiscordCounter.deps.json
+C:\Users\Iwand\Desktop\DiscordCounter\bin\Debug\net6.0-windows\DiscordCounter.runtimeconfig.json
+C:\Users\Iwand\Desktop\DiscordCounter\bin\Debug\net6.0-windows\DiscordCounter.dll
+C:\Users\Iwand\Desktop\DiscordCounter\bin\Debug\net6.0-windows\DiscordCounter.pdb
+C:\Users\Iwand\Desktop\DiscordCounter\bin\Debug\net6.0-windows\SeleniumExtras.WaitHelpers.dll
+C:\Users\Iwand\Desktop\DiscordCounter\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\Iwand\Desktop\DiscordCounter\bin\Debug\net6.0-windows\WebDriver.dll
+C:\Users\Iwand\Desktop\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.csproj.CopyComplete
+C:\Users\Iwand\Desktop\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.dll
+C:\Users\Iwand\Desktop\DiscordCounter\obj\Debug\net6.0-windows\refint\DiscordCounter.dll
+C:\Users\Iwand\Desktop\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.pdb
+C:\Users\Iwand\Desktop\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.genruntimeconfig.cache
+C:\Users\Iwand\Desktop\DiscordCounter\obj\Debug\net6.0-windows\ref\DiscordCounter.dll
+C:\Users\Iwand\Desktop\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.Properties.Resources.resources
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.csproj.AssemblyReference.cache
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.Form1.resources
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.Properties.Resources.resources
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.csproj.GenerateResource.cache
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.AssemblyInfoInputs.cache
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.AssemblyInfo.cs
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.csproj.CoreCompileInputs.cache
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.dll
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\refint\DiscordCounter.dll
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.pdb
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\selenium-manager\linux\selenium-manager
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\selenium-manager\macos\selenium-manager
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\selenium-manager\windows\selenium-manager.exe
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\DiscordCounter.exe
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\DiscordCounter.deps.json
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\DiscordCounter.runtimeconfig.json
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\DiscordCounter.dll
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\DiscordCounter.pdb
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\SeleniumExtras.WaitHelpers.dll
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\WebDriver.dll
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.csproj.CopyComplete
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.genruntimeconfig.cache
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\ref\DiscordCounter.dll
+C:\Users\Iwand\Desktop\DiscordCounter (2)\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\selenium-manager\linux\selenium-manager
+C:\Users\Iwand\Desktop\DiscordCounter (2)\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\selenium-manager\macos\selenium-manager
+C:\Users\Iwand\Desktop\DiscordCounter (2)\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\selenium-manager\windows\selenium-manager.exe
+C:\Users\Iwand\Desktop\DiscordCounter (2)\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\DiscordCounter.exe
+C:\Users\Iwand\Desktop\DiscordCounter (2)\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\DiscordCounter.deps.json
+C:\Users\Iwand\Desktop\DiscordCounter (2)\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\DiscordCounter.runtimeconfig.json
+C:\Users\Iwand\Desktop\DiscordCounter (2)\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\DiscordCounter.dll
+C:\Users\Iwand\Desktop\DiscordCounter (2)\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\DiscordCounter.pdb
+C:\Users\Iwand\Desktop\DiscordCounter (2)\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\SeleniumExtras.WaitHelpers.dll
+C:\Users\Iwand\Desktop\DiscordCounter (2)\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\Iwand\Desktop\DiscordCounter (2)\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\WebDriver.dll
+C:\Users\Iwand\Desktop\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.csproj.AssemblyReference.cache
+C:\Users\Iwand\Desktop\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.Form1.resources
+C:\Users\Iwand\Desktop\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.Properties.Resources.resources
+C:\Users\Iwand\Desktop\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.csproj.GenerateResource.cache
+C:\Users\Iwand\Desktop\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Iwand\Desktop\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.AssemblyInfoInputs.cache
+C:\Users\Iwand\Desktop\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.AssemblyInfo.cs
+C:\Users\Iwand\Desktop\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.csproj.CoreCompileInputs.cache
+C:\Users\Iwand\Desktop\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.csproj.CopyComplete
+C:\Users\Iwand\Desktop\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.dll
+C:\Users\Iwand\Desktop\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\refint\DiscordCounter.dll
+C:\Users\Iwand\Desktop\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.pdb
+C:\Users\Iwand\Desktop\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.genruntimeconfig.cache
+C:\Users\Iwand\Desktop\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\ref\DiscordCounter.dll
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter (2)\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\selenium-manager\linux\selenium-manager
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter (2)\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\selenium-manager\macos\selenium-manager
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter (2)\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\selenium-manager\windows\selenium-manager.exe
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter (2)\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\DiscordCounter.exe
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter (2)\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\DiscordCounter.deps.json
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter (2)\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\DiscordCounter.runtimeconfig.json
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter (2)\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\DiscordCounter.dll
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter (2)\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\DiscordCounter.pdb
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter (2)\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\SeleniumExtras.WaitHelpers.dll
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter (2)\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter (2)\DiscordCounter\DiscordCounter\bin\Debug\net6.0-windows\WebDriver.dll
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.csproj.AssemblyReference.cache
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.Form1.resources
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.Properties.Resources.resources
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.csproj.GenerateResource.cache
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.AssemblyInfoInputs.cache
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.AssemblyInfo.cs
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.csproj.CoreCompileInputs.cache
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.csproj.CopyComplete
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.dll
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\refint\DiscordCounter.dll
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.pdb
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\DiscordCounter.genruntimeconfig.cache
+C:\Users\iwand\OneDrive\Bureaublad\DiscordCounter\DiscordCounter (2)\DiscordCounter\DiscordCounter\obj\Debug\net6.0-windows\ref\DiscordCounter.dll
