@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dijkstra Draisma</title> 
+    <link rel="website icon" type="png" href="Dijkstra Logo.png"> 
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+
+    <div id="div1">
+        <img id="img1" src="dijkstra.png" alt="Logo dijkstra draisma" height="50px"> 
+        <h1 id="h1hr">Steenverdeling Muur</h1> 
+    </div>
+    <hr id="hrtop">
+    <form id="myForm"> <!--Form met de variabele en vaste maten-->
+        <b>Steen afmeting:</b><br>
+        Hoogte: &nbsp;&nbsp;<input type="number" id="steenhoogte" value="50"><br>
+        Breedte: &nbsp;<input type="number" id="steenbreedte" value="210"><br>
+        Lengte: &nbsp;&nbsp;&nbsp;<input type="number" id="steenlengte" value="100"><br>
+        <br>
+
+        <b>Voeg afmeting:</b><br>
+        Horizontaal: &nbsp;<input type="number" id="voeghorizontaal" value="10"><br>
+        Verticaal: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" id="voegverticaal" value="10"><br>
+        <br>
+
+        <b>Muur afmeting:</b><br>
+        Hoogte: &nbsp;&nbsp;<input type="number" id="muurhoogte" value="3000"><br>
+        Breedte: &nbsp;<input type="number" id="muurbreedte" value="3000"><br>
+        <br><br><br>
+
+        <b>Aantal deuren:&nbsp;&nbsp;&nbsp;&nbsp;</b>
+        <select id="aantaldeuren" onchange="toonDeur2()">
+            <option value="nuldeuren">0 Deuren</option>
+            <option value="eendeur">1 Deur</option>
+            <option value="tweedeuren">2 Deuren</option>
+        </select><br><br>
+
+        <div id="deur1" style="display: none;">
+            <b>Deur 1:</b><br>
+            <b>Maten deur 1:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+            <select onchange="selecteerDeurmaat()" id="deurmaten">
+                <option value="">Kies een deurmaat</option>
+                <option value="265 bij 1700">265 bij 1700</option>
+                <option value="290 bij 1812.5">290 bij 1812.5</option>
+                <option value="315 bij 1925">315 bij 1925</option>
+            </select><br>
+            Hoogte: &nbsp;<input type="number" id="deurhoogte" value="1950"><br>
+            Breedte: &nbsp;<input type="number" id="deurbreedte" value="530"><br>
+            Deurafstandbreedte: &nbsp;<input type="number" id="deurafstandb" value="1500"><br>
+        </div><br>
+
+        <div id="deur2" style="display: none;">
+            <b>Deur 2:</b><br>
+            <b>Maten deur 2:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+            <select onchange="selecteerDeurmaat2()" id="deurmaten2">
+                <option value="">Kies een deurmaat</option>
+                <option value="265 bij 1700">265 bij 1700</option>
+                <option value="290 bij 1812.5">290 bij 1812.5</option>
+                <option value="315 bij 1925">315 bij 1925</option>
+            </select><br>
+            Hoogte: &nbsp;<input type="number" id="deurhoogte2" value="1700"><br>
+            Breedte: &nbsp;<input type="number" id="deurbreedte2" value="540"><br>
+            Deurafstandbreedte: &nbsp;<input type="number" id="deurafstandb2" value="750"><br><br>
+        </div>
+
+        <b>Aantal ramen:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+        <select id="aantalramen" onchange="toonRaam2()">
+            <option value="nulramen">0 Ramen</option>
+            <option value="eenraam">1 Raam</option>
+            <option value="tweeramen">2 Ramen</option>
+        </select><br><br>
+
+        <div id="raam1" style="display: none;">
+            <b>Raam 1:</b><br>
+            <b>Maten raam 1:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+            <select onchange="selecteerRaammaat()" id="raammaten">
+                <option value="">Kies een raammaat</option>
+                <option value="500 bij 600">500 bij 600</option>
+                <option value="600 bij 800">600 bij 800</option>
+                <option value="800 bij 1200">800 bij 1200</option>
+            </select><br>
+            Hoogte: &nbsp;<input type="number" id="raamhoogte" value="500"><br>
+            Breedte: &nbsp;<input type="number" id="raambreedte" value="600"><br>
+            Raamafstandbreedte: &nbsp;<input type="number" id="raamafstandb" value="550"><br>
+            Raamafstandhoogte: &nbsp;<input type="number" id="raamafstandh" value="2600"><br>
+        </div><br>
+
+        <div id="raam2" style="display: none;">
+            <b>Raam 2:</b><br>
+            <b>Maten raam 2:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+            <select onchange="selecteerRaammaat2()" id="raammaten2">
+                <option value="">Kies een raammaat</option>
+                <option value="500 bij 600">500 bij 600</option>
+                <option value="600 bij 800">600 bij 800</option>
+                <option value="800 bij 1200">800 bij 1200</option>
+            </select><br>
+            Hoogte: &nbsp;<input type="number" id="raamhoogte2" value="600"><br>
+            Breedte: &nbsp;<input type="number" id="raambreedte2" value="800"><br>
+            Raamafstandbreedte: &nbsp;<input type="number" id="raamafstandb2" value="1900"><br>
+            Raamafstandhoogte: &nbsp;<input type="number" id="raamafstandh2" value="2725"><br>
+        </div><br>
+
+        <b>Baksteen soort:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+        <select id="steenSoort">
+            <option value="">Kies een Steen soort</option>
+            <option value="Handvorm steen">Handvorm steen</option>
+            <option value="Gesmoorde steen">Gesmoorde steen</option>
+            <option value="Gevel steen">Gevel steen</option>
+            <option value="Restauratie-of renovatie steen">Restauratie-of renovatie steen</option>
+        </select>
+        <br><br>
+
+        <b>Steen soort + maat:&nbsp;&nbsp;</b>
+        <select onchange="selecteerMaat()" id="steenmaten">
+            <option value="">Kies een Bak steen</option>
+            <option value="waalformaat">Waalformaat 50 x 210 x 100</option>
+            <option value="dikformaat">Dikformaat 65 x 215 x 101</option>
+            <option value="rijnformaat">Rijnformaat 41 x 180 x 87</option>
+            <option value="vechtformaat">Vechtformaat 40 x 210 x 100</option>
+            <option value="ysselformaat">Ysselformaat 41 x 160 x 78</option>
+            <option value="kloosterformaat">Kloosterformaat 40 x 280 x 130</option>
+        </select><br>
+        <br>
+
+        <b>Steen verband:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+        <select id="steenverband">
+            <option value="">Kies een Steen verband</option>
+            <option value="tegelverband">Tegelverband</option>
+            <option value="halfsteen">Halfsteen</option>
+        </select><br>
+        <br>
+
+        <div id="steen-teller-div"></div> <!--Stenteteller op in de form-->
+    </form>
+    <p>
+        <b>1px = 1mm</b><br>
+        <input id="EenheidId" type="number">
+        <select id="EenheidSelect">
+            <option>Kies een Eenheid</option>
+            <option value="1000">Meter</option>
+            <option value="100">Decimeter</option>
+            <option value="10">Centimeter</option>
+        </select> <!--Rekenmachinetje -->
+        <button class="button-1" role="button" onclick="Eenheidclick()">Eenheid berekenen</button><br>
+        <b>Millimeter: &nbsp;<span id="outputMeters"></span></b>
+    <div>
+        <input id="scale" type="range" min="1" max="20" value="10" onchange="myFunction()"> <!--Scale maten van 1 tot 10-->
+    </div>
+    <button class="button-1" role="button" onclick="myFunction()">Klik hier om de muur te genereren</button> <!--Genereer knop-->
+    <button id="pdf" class="button-1" role="button" onclick="saveCanvasAsPDF()">Save as PDF</button> <!--Canvas knop-->
+    <button id="refresh " class="button-1" onclick="location.reload();">Reset</button> <!--Reset knop-->
+    <hr id="hrtop">
+    </p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script> <!--Script voor het pdf-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script> <!--Script voor het pdf-->
+    <div class="container"> <canvas id="canvas" width="0" height="0"></canvas> </div>
+
+    <script>
+
+        let stenenTeller = {};
+
+        function myFunction() {
+
+
+            var steenhoogte = getElementValue("steenhoogte");
+            var steenbreedte = getElementValue("steenbreedte");
+            var voeghorizontaal = getElementValue("voeghorizontaal");
+            var voegverticaal = getElementValue("voegverticaal");
+            var muurhoogte = getElementValue("muurhoogte");
+            var muurbreedte = getElementValue("muurbreedte");
+            var steenverband = document.getElementById("steenverband").value;
+            var deurhoogte = getElementValue("deurhoogte");
+            var deurbreedte = getElementValue("deurbreedte");
+            var raamhoogte = getElementValue("raamhoogte");
+            var raambreedte = getElementValue("raambreedte");
+            var deurafstandb = getElementValue("deurafstandb");
+            var raamafstandb = getElementValue("raamafstandb");
+            var raamafstandh = getElementValue("raamafstandh");
+            var deurhoogte2 = getElementValue("deurhoogte2");
+            var deurbreedte2 = getElementValue("deurbreedte2");
+            var deurafstandb2 = getElementValue("deurafstandb2");
+            var raamhoogte2 = getElementValue("raamhoogte2");
+            var raambreedte2 = getElementValue("raambreedte2");
+            var raamafstandb2 = getElementValue("raamafstandb2");
+            var raamafstandh2 = getElementValue("raamafstandh2");
+            var aantaldeuren = document.getElementById("aantaldeuren").value;
+            var aantalramen = document.getElementById("aantalramen").value;
+            var scale = getElementValue("scale") / 10;
+            const canvas = document.getElementById('canvas');
+
+            if (canvas != null) {
+                canvas.width = (muurbreedte + voeghorizontaal + voeghorizontaal) * scale;
+                canvas.height = (muurhoogte + voegverticaal + voegverticaal) * scale;
+            }
+            //canvas variabel met de de desbetreffende breedtes
+
+            //tekenfunctie
+            draw(steenbreedte, steenhoogte, voegverticaal, voeghorizontaal, muurbreedte, muurhoogte, steenverband, deurhoogte, deurbreedte,
+                raamhoogte, raambreedte, deurafstandb, raamafstandb, raamafstandh, aantaldeuren, aantalramen, deurhoogte2, deurbreedte2, deurafstandb2, raamhoogte2, raambreedte2, raamafstandb2, raamafstandh2, scale);
+        }
+        //pdf downloader
+        function saveCanvasAsPDF() {
+            var canvas = document.getElementById('canvas');
+            var imgData = canvas.toDataURL("image/png");
+            var pdf = new jsPDF('p', 'pt', [canvas.width, canvas.height]);
+            var pdfWidth = pdf.internal.pageSize.getWidth();
+            var pdfHeight = pdf.internal.pageSize.getHeight();
+            pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
+            pdf.addPage();
+            var form = document.querySelector('form');
+            html2canvas(form).then(canvas => {
+                var formData = canvas.toDataURL();
+                var formWidth = form.offsetWidth * 2;
+                var formHeight = form.offsetHeight * 2;
+                pdf.addImage(formData, 'PNG', 0, 0, formWidth, formHeight);
+                pdf.save("muur.pdf");
+            });
+        }
+        //alert
+        function getElementValue(name) {
+            var element = document.getElementById(name);
+            if (element == null) {
+                alert(name + " niet gevonden");
+            }
+            return parseInt(element.value);
+        }
+        
+        //vaste maten voor een steenkeuze
+        function selecteerMaat() {
+            let maat = document.getElementById("steenmaten").value;
+            if (maat == "waalformaat") {
+                document.getElementById("steenhoogte").value = 50;
+                document.getElementById("steenbreedte").value = 210;
+                document.getElementById("steenlengte").value = 100;
+                document.getElementById("voeghorizontaal").value = 10;
+                document.getElementById("voegverticaal").value = 10;
+                document.getElementById("muurhoogte").value = 2000;
+                document.getElementById("muurbreedte").value = 2000;
+            }
+
+            else if (maat == "dikformaat") {
+                document.getElementById("steenhoogte").value = 65;
+                document.getElementById("steenbreedte").value = 215;
+                document.getElementById("steenlengte").value = 101;
+                document.getElementById("voeghorizontaal").value = 10;
+                document.getElementById("voegverticaal").value = 10;
+                document.getElementById("muurhoogte").value = 2000;
+                document.getElementById("muurbreedte").value = 2000;
+            }
+
+            else if (maat == "rijnformaat") {
+                document.getElementById("steenhoogte").value = 41;
+                document.getElementById("steenbreedte").value = 180;
+                document.getElementById("steenlengte").value = 87;
+                document.getElementById("voeghorizontaal").value = 10;
+                document.getElementById("voegverticaal").value = 10;
+                document.getElementById("muurhoogte").value = 2000;
+                document.getElementById("muurbreedte").value = 2000;
+            }
+
+            else if (maat == "vechtformaat") {
+                document.getElementById("steenhoogte").value = 40;
+                document.getElementById("steenbreedte").value = 210;
+                document.getElementById("steenlengte").value = 100;
+                document.getElementById("voeghorizontaal").value = 10;
+                document.getElementById("voegverticaal").value = 10;
+                document.getElementById("muurhoogte").value = 2000;
+                document.getElementById("muurbreedte").value = 2000;
+            }
+
+            else if (maat == "ysselformaat") {
+                document.getElementById("steenhoogte").value = 41;
+                document.getElementById("steenbreedte").value = 160;
+                document.getElementById("steenlengte").value = 78;
+                document.getElementById("voeghorizontaal").value = 10;
+                document.getElementById("voegverticaal").value = 10;
+                document.getElementById("muurhoogte").value = 2000;
+                document.getElementById("muurbreedte").value = 2000;
+            }
+
+            else if (maat == "kloosterformaat") {
+                document.getElementById("steenhoogte").value = 40;
+                document.getElementById("steenbreedte").value = 280;
+                document.getElementById("steenlengte").value = 130;
+                document.getElementById("voeghorizontaal").value = 10;
+                document.getElementById("voegverticaal").value = 10;
+                document.getElementById("muurhoogte").value = 2000;
+                document.getElementById("muurbreedte").value = 2000;
+            }
+        }
+
+        //vaste maten voor deuren en ramen
+        function selecteerDeurmaat() {
+            let deurmaat = document.getElementById("deurmaten").value;
+
+            if (deurmaat == "265 bij 1700") {
+                document.getElementById("deurhoogte").value = 1700;
+                document.getElementById("deurbreedte").value = 265;
+            }
+
+            else if (deurmaat == "290 bij 1812.5") {
+                document.getElementById("deurhoogte").value = 1812.5;
+                document.getElementById("deurbreedte").value = 290;
+            }
+
+            else if (deurmaat == "315 bij 1925") {
+                document.getElementById("deurhoogte").value = 1925;
+                document.getElementById("deurbreedte").value = 315;
+            }
+        }
+
+        function selecteerDeurmaat2() {
+            let deurmaat = document.getElementById("deurmaten2").value;
+
+            if (deurmaat == "265 bij 1700") {
+                document.getElementById("deurhoogte2").value = 1700;
+                document.getElementById("deurbreedte2").value = 265;
+            }
+            else if (deurmaat == "290 bij 1812.5") {
+                document.getElementById("deurhoogte2").value = 1812.5;
+                document.getElementById("deurbreedte2").value = 290;
+            }
+            else if (deurmaat == "315 bij 1925") {
+                document.getElementById("deurhoogte2").value = 1925;
+                document.getElementById("deurbreedte2").value = 315;
+            }
+        }
+
+        function selecteerRaammaat() {
+            let raammaat = document.getElementById("raammaten").value;
+
+            if (raammaat == "500 bij 600") {
+                document.getElementById("raamhoogte").value = 500;
+                document.getElementById("raambreedte").value = 600;
+            }
+            else if (raammaat == "600 bij 800") {
+                document.getElementById("raamhoogte").value = 600;
+                document.getElementById("raambreedte").value = 800;
+            }
+            else if (raammaat == "800 bij 1200") {
+                document.getElementById("raamhoogte").value = 800;
+                document.getElementById("raambreedte").value = 1200;
+            }
+        }
+
+        function selecteerRaammaat2() {
+            let raammaat = document.getElementById("raammaten2").value;
+
+            if (raammaat == "500 bij 600") {
+                document.getElementById("raamhoogte2").value = 500;
+                document.getElementById("raambreedte2").value = 600;
+            }
+            else if (raammaat == "600 bij 800") {
+                document.getElementById("raamhoogte2").value = 600;
+                document.getElementById("raambreedte2").value = 800;
+            }
+            else if (raammaat == "800 bij 1200") {
+                document.getElementById("raamhoogte2").value = 800;
+                document.getElementById("raambreedte2").value = 1200;
+            }
+        }
+
+        function toonDeur2() {
+            var aantaldeuren = document.getElementById("aantaldeuren").value;
+            if (aantaldeuren == 'tweedeuren') {
+                document.getElementById("deur2").style.display = 'block';
+            }
+            else {
+                document.getElementById("deur2").style.display = 'none';
+            }
+
+            if (aantaldeuren == 'eendeur' || aantaldeuren == 'tweedeuren') {
+                document.getElementById("deur1").style.display = 'block';
+            }
+            else {
+                document.getElementById("deur1").style.display = 'none';
+            }
+        }
+
+        function toonRaam2() {
+            var aantalramen = document.getElementById("aantalramen").value;
+            if (aantalramen == 'tweeramen') {
+                document.getElementById("raam2").style.display = 'block';
+            }
+            else {
+                document.getElementById("raam2").style.display = 'none';
+            }
+
+            if (aantalramen == 'eenraam' || aantalramen == 'tweeramen') {
+                document.getElementById("raam1").style.display = 'block';
+            }
+            else {
+                document.getElementById("raam1").style.display = 'none';
+            }
+        }
+
+        function Eenheidclick() {
+            var EenheidId = document.getElementById("EenheidId").value;
+            var EenheidSelect = document.getElementById("EenheidSelect").value;
+            LengthConverter(EenheidSelect, EenheidId);
+        }
+        function LengthConverter(EHNR, valNum) {
+            document.getElementById("outputMeters").innerHTML = valNum * EHNR;
+        }
+
+
+        //tekensteen functie voor de kleur en randen van de steen + (text popup wanneer nodig) + de stenenteller
+        function tekenSteen(ctx, xpos, ypos, width, height, scale, kleur, toonmm) {
+            ctx.strokeRect(xpos * scale, ypos * scale, width * scale, height * scale);
+            ctx.fillStyle = kleur;
+            ctx.fillRect(xpos * scale, ypos * scale, width * scale, height * scale);
+            if (toonmm) {
+                ctx.fillStyle = "black";
+                ctx.fillText(width + "mm ", (xpos + 5) * scale, (ypos + 20) * scale);
+                var heightElement = document.getElementById("steenhoogte");
+                if (height != heightElement.value) {
+                    ctx.fillStyle = "black";
+                    ctx.fillText(height + "mm", (xpos + 5) * scale, (ypos + 40) * scale);
+                }
+            }
+            if (stenenTeller[height] === undefined) {
+                stenenTeller[height] = {};
+            }
+            if (stenenTeller[height][width] === undefined) {
+                stenenTeller[height][width] = 1;
+            } else {
+                stenenTeller[height][width] += 1;
+            }
+        }
+        
+        //tekenfunctie
+        function draw(sdx, sdy, vdx, vdy, mdx, mdy, steenverband, deurhoogte, deurbreedte, raamhoogte, raambreedte, deurafstandb, raamafstandb, raamafstandh, aantaldeuren, aantalramen,
+            deurhoogte2, deurbreedte2, deurafstandb2, raamhoogte2, raambreedte2, raamafstandb2, raamafstandh2, scale) {
+            const canvas = document.getElementById('canvas');
+            if (canvas.getContext) {
+                const ctx = canvas.getContext('2d');
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                var steenBreedte = sdx;
+                var steenHoogte = sdy;
+                var voegBreedte = vdx;
+                var voegHoogte = vdy;
+                var laatsteSteenY = 0;
+                var muurBreedte = mdx + 10;
+                var muurHoogte = mdy + 10;
+                var strek = steenBreedte + voegBreedte;
+                var halvesteen = steenBreedte / 2 - voegBreedte / 2;
+                var lagenMaat = steenHoogte + voegHoogte;
+                var rij = 0;
+                var laatsteSteenY = 0;
+                
+                //kleuren voor soort stenen
+                var kleur = "brown";
+                var select = document.getElementById("steenSoort");
+                var selectedOption = select.options[select.selectedIndex];
+                if (selectedOption.value === "Handvorm steen") {
+                    kleur = "#D2A161";
+                } else if (selectedOption.value === "Gesmoorde steen") {
+                    kleur = "#BC544B";
+                } else if (selectedOption.value === "Gevel steen") {
+                    kleur = "#7B7B7B";
+                } else if (selectedOption.value === "Restauratie-of renovatie steen") {
+                    kleur = "#373737";
+                }
+                //array deuren
+                var doors = [[deurafstandb, muurHoogte - deurhoogte, deurbreedte, deurhoogte], [deurafstandb2, muurHoogte - deurhoogte2, deurbreedte2, deurhoogte2]];
+                if (aantaldeuren == 'nuldeuren') {
+                    doors = [];
+                } else if (aantaldeuren == 'eendeur') {
+                    doors.pop();
+                }
+                //array ramen
+                var windows = [[raamafstandb, muurHoogte - raamafstandh, raambreedte, raamhoogte], [raamafstandb2, muurHoogte - raamafstandh2, raambreedte2, raamhoogte2]];
+                if (aantalramen == 'nulramen') {
+                    windows = [];
+                } else if (aantalramen == 'eenraam') {
+                    windows.pop();
+                }
+                //desbetreffende loops hieronder
+                for (let ypos = 10; ypos < muurHoogte; ypos += lagenMaat) {
+                    laatsteSteenY = ypos;
+                    rij++;
+                    let xpos = 10;
+                    if (steenverband == 'halfsteen') {
+                        if (rij % 2 == 0) {
+                            if (!valtSteenBinnenDeur(xpos * scale, ypos * scale, halvesteen * scale, steenHoogte * scale, scale, doors) &&
+                                !valtSteenBinnenRaam(xpos * scale, ypos * scale, halvesteen * scale, steenHoogte * scale, scale, windows)) {
+                                tekenSteen(ctx, xpos, ypos, halvesteen, steenHoogte, scale, kleur);
+                                xpos += halvesteen + voegBreedte;
+                            }
+                        }
+                    }
+
+
+                    for (; xpos + steenBreedte <= muurBreedte; xpos += strek) {
+                        var doorMatch = valtSteenBinnenDeur(xpos * scale, ypos * scale, steenBreedte * scale, steenHoogte * scale, scale, doors);
+                        var windowMatch = valtSteenBinnenRaam(xpos * scale, ypos * scale, steenBreedte * scale, steenHoogte * scale, scale, windows);
+                        if (!doorMatch && !windowMatch) {
+                            tekenSteen(ctx, xpos, ypos, steenBreedte, steenHoogte, scale, kleur);
+                        }
+
+
+                        else if (doorMatch) {
+                            if (xpos < doorMatch[0]) {
+                                tekenSteen(ctx, xpos, ypos, (doorMatch[0] - xpos), steenHoogte, scale, kleur, true);
+
+
+                                if (ypos < doorMatch[1]) {
+                                    tekenSteen(ctx, doorMatch[0] + voegBreedte, ypos, steenBreedte - (doorMatch[0] - xpos) - voegBreedte, (doorMatch[1] - ypos), scale, kleur, true);
+                                }
+                            }
+
+
+                            else if (xpos + steenBreedte > doorMatch[0] + doorMatch[2]) {
+                                tekenSteen(ctx, doorMatch[0] + doorMatch[2], ypos, (xpos + steenBreedte) - (doorMatch[0] + doorMatch[2]), steenHoogte, scale, kleur, true);
+
+                                if (ypos < doorMatch[1]) {
+                                    tekenSteen(ctx, xpos, ypos, steenBreedte - ((xpos + steenBreedte) - (doorMatch[0] + doorMatch[2])) - voegBreedte, (doorMatch[1] - ypos), scale, kleur, true);
+                                }
+                            }
+
+                            else if (ypos < doorMatch[1]) {
+                                tekenSteen(ctx, xpos, ypos, steenBreedte, (doorMatch[1] - ypos), scale, kleur, true);
+                            }
+                        }
+
+
+                        else if (windowMatch) {
+                            if (xpos < windowMatch[0]) {
+                                tekenSteen(ctx, xpos, ypos, (windowMatch[0] - xpos), steenHoogte, scale, kleur, true);
+
+
+                                if (ypos < windowMatch[1]) {
+                                    tekenSteen(ctx, windowMatch[0] + voegBreedte, ypos, steenBreedte - (windowMatch[0] - xpos) - voegBreedte, (windowMatch[1] - ypos), scale, kleur, true);
+                                }
+                            }
+
+
+                            else if (xpos + steenBreedte > windowMatch[0] + windowMatch[2]) {
+                                tekenSteen(ctx, windowMatch[0] + windowMatch[2], ypos, (xpos + steenBreedte) - (windowMatch[0] + windowMatch[2]), steenHoogte, scale, kleur, true);
+
+                                if (ypos < windowMatch[1]) {
+                                    tekenSteen(ctx, xpos, ypos, steenBreedte - ((xpos + steenBreedte) - (windowMatch[0] + windowMatch[2])) - voegBreedte, (windowMatch[1] - ypos), scale, kleur, true);
+                                }
+
+                            }
+                            else if (ypos < windowMatch[1]) {
+                                tekenSteen(ctx, xpos, ypos, steenBreedte, (windowMatch[1] - ypos), scale, kleur, true);
+                            }
+                        }
+                    }
+
+                    if (xpos < muurBreedte) {
+                        let overigeSteenBreedte = muurBreedte - xpos;
+                        tekenSteen(ctx, xpos, ypos, overigeSteenBreedte, steenHoogte, scale, kleur, true);
+                    }
+                }
+                let steenTellerDiv = document.getElementById("steen-teller-div");
+                steenTellerDiv.innerHTML = tellerNaarHtml(stenenTeller);
+            }
+        }
+        //teller naar de form sturen + style
+        function tellerNaarHtml(stenenTeller) {
+            let result = "<div class='border'>";
+            for (let width in stenenTeller) {
+                result += "<div class='steen-teller-div'>Hoogte: " + width + "mm</div>";
+                for (let height in stenenTeller[width]) {
+                    result += "<div class='steen-teller-div'>&nbsp;&nbsp;&nbsp;Breedte: " + height + "mm - " + stenenTeller[width][height] + " stenen</div>";
+                }
+            }
+            result += "<style> .steen-teller-div { font-size: 80%; } </style>";
+
+            return result;
+        }
+
+        function valtSteenBinnenDeur(steenX, steenY, steenW, steenH, scale, doors) {
+            for (const deur of doors) {
+                const [deurX, deurY, deurW, deurH] = deur;
+                if (
+                    steenX < (deurX + deurW) * scale &&
+                    steenX + steenW > deurX * scale &&
+                    steenY < (deurY + deurH) * scale &&
+                    steenY + steenH > deurY * scale
+                ) {
+                    return deur;
+                }
+            }
+            return false;
+        }
+
+        function valtSteenBinnenRaam(steenX, steenY, steenW, steenH, scale, windows) {
+            for (const raam of windows) {
+                const [raamX, raamY, raamW, raamH] = raam;
+                if (
+                    steenX < (raamX + raamW) * scale &&
+                    steenX + steenW > raamX * scale &&
+                    steenY < (raamY + raamH) * scale &&
+                    steenY + steenH > raamY * scale
+                ) {
+                    return raam;
+                }
+            }
+            return false;
+        }
+    </script>
+</body>
+
+</html>
