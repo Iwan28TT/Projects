@@ -1,0 +1,318 @@
+body {
+    background: #3e4144;
+  }
+  
+  .form {
+    margin: 50px auto;
+    width: 500px;
+    padding: 30px 25px;
+    background: white;
+    position: relative;
+  }
+  
+  .blogpost {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .blogcontent {
+    flex: 1 1 auto;
+  }
+  
+  .blogprofiel {
+    flex: 0 0 75px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .blogprofiel-img {
+    flex: 0 0 75px;
+  }
+  
+  .blogprofiel-info {
+    flex: 1 1 auto;
+  }
+  
+  .profiel-foto {
+    height: 50px;
+    width: 50px;
+    float: right;
+    margin-top: -25px;
+  }
+  
+  .profiel-img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  
+  h1.login-title {
+    color: #666;
+    margin: 0px auto 25px;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  .login-input {
+    font-size: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 25px;
+    height: 25px;
+    width: calc(100% - 23px);
+  }
+  
+  .login-input:focus {
+    border-color: #6e8095;
+    outline: none;
+  }
+  
+  .login-button {
+    color: #fff;
+    background: #55a1ff;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .link {
+    color: #666;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  
+  .link a {
+    color: #666;
+  }
+  
+  h3 {
+    font-weight: normal;
+    text-align: center;
+  }
+
+  h4 {
+    text-align: center;
+    top: 0;
+  }
+  
+  /* new styles */
+  textarea[name="blogtekst"] {
+    font-size: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 25px;
+    width: 100%;
+    height: 150px;
+    resize: vertical;
+  }
+  
+  input[type="file"] {
+    margin-bottom: 25px;
+  }
+  
+  input[type="submit"][name="submit"] {
+    background-color: #55a1ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"][name="submit"]:hover {
+    background-color: #4d8be6;
+  }
+  
+  hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+  
+  .blogpost {
+    margin-bottom: 50px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .blogimg {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  
+  .blogtekst {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .bloguser {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .blogdate {
+    font-size: 12px;
+color: #999;
+margin-top: 5px;
+}
+
+.blogpost{
+width: 92%;
+height:200px;
+display: flex;
+flex-direction: row;
+}
+
+.blogcontent {
+flex: 1 1 auto;
+}
+
+.blogprofiel {
+flex: 0 0 75px;
+display: flex;
+flex-direction: column;
+}
+
+.blogprofiel-img{
+flex: 0 0 75px;
+}
+
+.blogprofiel-info{
+flex: 1 1 auto;
+top: 0;
+}
+
+.profiel-foto {
+height: 50px;
+width: 50px;
+float: right;
+margin-top:-25px;
+}
+
+.profiel-img {
+max-height: 100%;
+max-width: 100%;
+}
+
+h1.login-title {
+color: #666;
+margin: 0px auto 25px;
+font-size: 25px;
+font-weight: 300;
+text-align: center;
+}
+
+.login-input {
+font-size: 15px;
+border: 1px solid #ccc;
+padding: 10px;
+margin-bottom: 25px;
+height: 25px;
+width: calc(100% - 23px);
+}
+
+.login-input:focus {
+border-color:#6e8095;
+outline: none;
+}
+
+.login-button {
+color: #fff;
+background: #55a1ff;
+border: 0;
+outline: 0;
+width: 100%;
+height: 50px;
+font-size: 16px;
+text-align: center;
+cursor: pointer;
+}
+
+.link {
+color: #666;
+font-size: 15px;
+text-align: center;
+margin-bottom: 0px;
+}
+
+.link a {
+color: #666;
+}
+
+h3 {
+font-weight: normal;
+text-align: center;
+}
+
+/* Add styling for blog posts */
+.blogpost-container {
+margin-top: 30px;
+}
+
+.blogpost-header {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.blogpost-title {
+font-size: 20px;
+font-weight: bold;
+margin: 0;
+}
+
+.blogpost-delete {
+color: red;
+cursor: pointer;
+}
+
+.blogpost-body {
+margin-top: 10px;
+font-size: 16px;
+}
+
+.blogpost-img {
+max-height: 100%;
+max-width: 100%;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+.form {
+width: 100%;
+}
+
+.blogpost {
+flex-direction: column;
+height: auto;
+}
+
+.blogcontent {
+margin-top: 10px;
+}
+
+.blogprofiel {
+margin-top: 10px;
+flex-basis: 50px;
+flex-direction: row;
+}
+
+.blogprofiel-img{
+flex: 0 0 50px;
+}
+
+.profiel-foto {
+margin-top: -10px;
+}
+}
+
+
+  
